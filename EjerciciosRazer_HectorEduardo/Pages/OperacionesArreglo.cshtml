@@ -1,0 +1,36 @@
+﻿@page
+@model EjerciciosRazer_HectorEduardo.Pages.OperacionesArregloModel
+@{
+}
+<link rel="stylesheet" href="~/css/operaciones-arreglo.css" />
+<div class="oa-container">
+    <h2>Arreglo Aleatorio</h2>
+    <table class="oa-table">
+        <tr>
+            @foreach (var num in Model.Arreglo)
+            {
+                <td>@num</td>
+            }
+        </tr>
+    </table>
+
+    <div class="oa-result-card">
+        <span class="oa-label">Suma:</span> @Model.Suma<br />
+        <span class="oa-label">Promedio:</span> @Model.Promedio
+    </div>
+
+    <h2>Arreglo Ordenado</h2>
+    <table class="oa-table">
+        <tr>
+            @foreach (var num in Model.ArregloOrdenado)
+            {
+                <td>@num</td>
+            }
+        </tr>
+    </table>
+
+    <div class="oa-result-card">
+        <span class="oa-label">Moda:</span> @Model.ModaTexto<br />
+        <span class="oa-label">Mediana:</span> @Model.Mediana
+    </div>
+</div>

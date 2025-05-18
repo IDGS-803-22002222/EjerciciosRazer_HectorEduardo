@@ -1,0 +1,45 @@
+﻿body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.oa-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 32px 40px 24px 40px;
+}
+
+.oa-table {
+    border-collapse: collapse;
+    margin-bottom: 18px;
+}
+
+    .oa-table td {
+        border: 1px solid #bfc9d1;
+        padding: 8px 12px;
+        text-align: center;
+        background: #f8fafc;
+        font-size: 1.1em;
+    }
+
+.oa-result-card {
+    background: #eaf1fb;
+    border-radius: 7px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(44,62,80,0.04);
+}
+
+    .oa-result-card strong {
+        color: #1a5276;
+    }
+
+.oa-label {
+    font-weight: bold;
+    color: #34495e;
+}

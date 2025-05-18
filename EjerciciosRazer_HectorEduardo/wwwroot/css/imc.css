@@ -1,0 +1,115 @@
+﻿.imc-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+    .imc-container h1 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #2d3a4b;
+    }
+
+.imc-flex {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imc-form-panel {
+    flex: 1 1 320px;
+    min-width: 260px;
+}
+
+.imc-img-panel {
+    flex: 1 1 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 260px;
+}
+
+.imc-form-group {
+    margin-bottom: 18px;
+}
+
+    .imc-form-group label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #34495e;
+    }
+
+    .imc-form-group input[type="number"] {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid #bfc9d1;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.2s;
+    }
+
+        .imc-form-group input[type="number"]:focus {
+            border-color: #5dade2;
+            outline: none;
+        }
+
+.imc-btn {
+    width: 100%;
+    padding: 10px 0;
+    background: #5dade2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .imc-btn:hover {
+        background: #3498db;
+    }
+
+.imc-result {
+    margin-top: 28px;
+    padding: 18px;
+    background: #eaf6fb;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.08);
+}
+
+    .imc-result h2 {
+        color: #2874a6;
+        margin-bottom: 10px;
+    }
+
+.imc-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(52,152,219,0.12);
+    transition: transform 0.2s;
+}
+
+    .imc-img:hover {
+        transform: scale(1.05);
+    }
+
+@media (max-width: 900px) {
+    .imc-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .imc-img-panel {
+        margin-top: 24px;
+    }
+}

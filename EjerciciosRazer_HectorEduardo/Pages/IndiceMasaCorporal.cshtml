@@ -1,0 +1,38 @@
+﻿@page
+@model EjerciciosRazer_HectorEduardo.Pages.IndiceMasaCorporalModel
+@{
+}
+<link rel="stylesheet" href="~/css/imc.css" />
+
+<div class="imc-container">
+    <h1>Índice de Masa Corporal</h1>
+    <div class="imc-flex">
+        <div class="imc-form-panel">
+            <form method="post">
+                <div class="imc-form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" asp-for="Peso" step="0.01" min="1" required />
+                </div>
+                <div class="imc-form-group">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" asp-for="Altura" step="0.01" min="0.5" required />
+                </div>
+                <button type="submit" class="imc-btn">Calcular IMC</button>
+            </form>
+            @if (Model.IMC > 0)
+            {
+                <div class="imc-result">
+                    <h2>Resultado</h2>
+                    <p><strong>IMC:</strong> @Model.IMC.ToString("0.00")</p>
+                    <p><strong>Clasificación:</strong> @Model.Clasificacion</p>
+                </div>
+            }
+        </div>
+        @if (Model.IMC > 0)
+        {
+            <div class="imc-img-panel">
+                <img src="@Model.ImagenRecomendacion" alt="Recomendación" class="imc-img" />
+            </div>
+        }
+    </div>
+</div>

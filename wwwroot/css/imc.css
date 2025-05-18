@@ -1,0 +1,12 @@
+.imc-img {
+    display: block;
+    margin: 18px auto 0 auto;
+    max-width: 900px; 
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(52,152,219,0.12);
+    transition: transform 0.2s;
+}
+.imc-img:hover {
+    transform: scale(1.05);
+}

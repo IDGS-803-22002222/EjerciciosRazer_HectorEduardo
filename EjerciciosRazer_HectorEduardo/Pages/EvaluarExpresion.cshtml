@@ -1,0 +1,37 @@
+﻿@page
+@model EjerciciosRazer_HectorEduardo.Pages.EvaluarExpresionModel
+@{
+}
+<link rel="stylesheet" href="~/css/expresion.css" />
+<div class="expresion-container">
+    <h2>Evaluar (ax + by)<sup>n</sup> = <strong> @Model.primerResultado</strong> </h2>
+    
+
+<form method="post">
+    <label>a: <input asp-for="A" type="number" step="any" /></label><br />
+    <label>b: <input asp-for="B" type="number" step="any" /></label><br />
+    <label>x: <input asp-for="X" type="number" step="any" /></label><br />
+    <label>y: <input asp-for="Y" type="number" step="any" /></label><br />
+    <label>n: <input asp-for="N" type="number" min="0" /></label><br />
+    <button type="submit">Calcular</button>
+</form>
+
+    
+    <table border="1">
+        <tr>
+            <th>k</th>
+            <th>Termino</th>
+            <th>Suma acumulada</th>
+        </tr>
+        @foreach (var item in Model.Iteraciones)
+        {
+            <tr>
+                <td>@item.K</td>
+                <td>@item.Termino</td>
+                <td>@item.SumaAcumulada</td>
+            </tr>
+        }
+    </table>
+    <h3>Resultado final: @Model.Resultado</h3>
+
+</div>

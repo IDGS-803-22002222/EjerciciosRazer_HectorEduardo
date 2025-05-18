@@ -43,16 +43,23 @@ namespace EjerciciosRazer_HectorEduardo.Pages
 
         private string ObtenerImagen(string clasificacion)
         {
-            return clasificacion switch
+            switch (clasificacion)
             {
-                "Peso Bajo" => "/img/peso_bajo.png",
-                "Peso Normal" => "/img/peso_normal.png",
-                "Sobre peso" => "/img/sobrepeso.png",
-                "Obesidad grado I" => "/img/obesidad1.png",
-                "Obesidad grado II" => "/img/obesidad2.png",
-                "Obesidad grado III" => "/img/obesidad3.png",
-                _ => "/img/default.png"
-            };
+                case "Peso Bajo":
+                    return "/img/peso_bajo.png";
+                case "Peso Normal":
+                    return "/img/peso_normal.png";
+                case "Sobre peso":
+                    return "/img/sobrepeso.png";
+                case "Obesidad grado I":
+                    return "/img/obesidad1.png";
+                case "Obesidad grado II":
+                    return "/img/obesidad2.png";
+                case "Obesidad grado III":
+                    return "/img/obesidad3.png";
+                default:
+                    return "/img/no.png";
+            }
         }
     }
 }
